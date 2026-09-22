@@ -1,13 +1,18 @@
 import { useState } from "react";
-import heroImg from "./assets/hero.png";
-import reactLogo from "./assets/react.svg";
-import viteLogo from "./assets/vite.svg";
-import "./App.css";
+import SearchPage from "./pages/SearchPage";
+import MedicineDetails from "./pages/MedicineDetails";
 
 function App() {
-  const [count, setCount] = useState(0);
-
-  return <></>;
+  const [selectedMedicine, setSelectedMedicine] = useState(null);
+  // return <h1>Hello</h1>;
+  if (selectedMedicine) {
+    return (
+      <MedicineDetails
+        medicine={selectedMedicine}
+        onBack={() => setSelectedMedicine(null)}
+      />
+    );
+  }
 }
 
 export default App;
