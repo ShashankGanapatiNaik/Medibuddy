@@ -1,4 +1,4 @@
-//import "./MedicineDetails.css";
+import "./MedicineDetails.css";
 function MedicineDetails({ medicine, onBack }) {
   if (!medicine) {
     return (

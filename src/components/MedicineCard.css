@@ -1,29 +1,33 @@
 .medicine-card {
-  background: white;
-  border: 1px solid #ddd;
-  border-radius: 10px;
-  padding: 20px;
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  padding: 22px;
   cursor: pointer;
-  transition: 0.2s;
+  transition: all 0.2s ease;
 }
+
 .medicine-card:hover {
   transform: translateY(-3px);
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  border-color: #93c5fd;
+  box-shadow: 0 8px 20px rgba(37, 99, 235, 0.1);
 }
 
 .medicine-card h2 {
-  margin: 0 0 15px;
-  font-size: 22px;
-  color: #222;
+  margin: 0 0 18px;
+  color: #1769aa;
+  font-size: 21px;
+  font-weight: 600;
 }
 
 .medicine-card p {
-  margin: 8px 0;
-  color: #555;
+  margin: 10px 0;
+  color: #64748b;
   font-size: 15px;
   line-height: 1.5;
 }
 
 .medicine-card strong {
-  color: #222;
+  color: #334155;
+  font-weight: 600;
 }
