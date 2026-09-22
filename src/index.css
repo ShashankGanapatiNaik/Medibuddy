@@ -1,0 +1,154 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f5f6f8;
+  color: #222;
+}
+
+button,
+input {
+  font: inherit;
+}
+
+.search-page,
+.details-page {
+  width: 90%;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 50px 0;
+}
+
+h1 {
+  margin-bottom: 8px;
+}
+
+.subtitle {
+  color: #666;
+  margin-bottom: 25px;
+}
+
+.search-bar {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 35px;
+}
+
+.search-bar input {
+  flex: 1;
+  padding: 13px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  outline: none;
+}
+
+.search-bar input:focus {
+  border-color: #333;
+}
+
+.search-bar button,
+.back-button,
+.details-page button {
+  padding: 13px 20px;
+  border: none;
+  border-radius: 6px;
+  background: #222;
+  color: white;
+  cursor: pointer;
+}
+
+.medicine-list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.medicine-card {
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.medicine-card:hover {
+  transform: translateY(-2px);
+}
+
+.medicine-card h2 {
+  margin-top: 0;
+  margin-bottom: 15px;
+}
+
+.medicine-card p {
+  margin: 8px 0;
+  color: #555;
+}
+
+.message {
+  text-align: center;
+  margin: 30px 0;
+  color: #666;
+}
+
+.error {
+  color: #c62828;
+}
+
+.details-card {
+  background: white;
+  margin-top: 25px;
+  padding: 30px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+}
+
+.detail {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 15px 0;
+  border-bottom: 1px solid #eee;
+}
+
+.detail:last-child {
+  border-bottom: none;
+}
+
+.detail span {
+  color: #555;
+  text-align: right;
+}
+
+@media (max-width: 700px) {
+  .search-page,
+  .details-page {
+    width: 94%;
+    padding: 30px 0;
+  }
+
+  .search-bar {
+    flex-direction: column;
+  }
+
+  .search-bar button {
+    width: 100%;
+  }
+
+  .medicine-list {
+    grid-template-columns: 1fr;
+  }
+
+  .detail {
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  .detail span {
+    text-align: left;
+  }
+}
