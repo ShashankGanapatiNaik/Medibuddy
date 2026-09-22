@@ -4,7 +4,7 @@ import MedicineDetails from "./pages/MedicineDetails";
 
 function App() {
   const [selectedMedicine, setSelectedMedicine] = useState(null);
-  // return <h1>Hello</h1>;
+
   if (selectedMedicine) {
     return (
       <MedicineDetails
@@ -13,6 +13,8 @@ function App() {
       />
     );
   }
+
+  return <SearchPage onSelectMedicine={setSelectedMedicine} />;
 }
 
 export default App;
