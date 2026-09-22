@@ -1,3 +1,4 @@
+import "./SearchBar.css";
 function SearchBar({ value, onChange, onSearch }) {
   const handleSubmit = (e) => {
     e.preventDefault();
