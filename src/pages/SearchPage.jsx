@@ -4,6 +4,7 @@ import MedicineCard from "../components/MedicineCard";
 import Loading from "../components/Loading";
 import ErrorMessage from "../components/ErrorMessage";
 import { searchMedicines } from "../services/fdaApi";
+//import "./SearchPage.css";
 
 function SearchPage({ onSelectMedicine }) {
   const [search, setSearch] = useState("");
